@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#map {
+  height: 565px;
+  width: 100%;
+  
+}
+
+.info {
+  flex-direction: column;
+  display: flex;
+  width: 300px;
+  height: 100px;
+  background: #fff;
+  position: absolute;
+  bottom: 50px;
+  padding: 15px 10px;
+  display: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.info h2 {
+  display: block;
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid #efefef;
+}
+
+.info .number-container {
+  display: block;
+  width: 100%;
+  line-height: 20px;
+  padding: 10px 5px;
+
+}
+
+.info #number {
+  font-size: 18px;
+}
+
+.info img {
+  float: right;
+}
+
+
+@media (max-width: 600px){
+  .info {
+    width: 95%;
+    bottom: 0;
+  }
+}
